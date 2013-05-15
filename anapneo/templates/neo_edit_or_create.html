@@ -10,7 +10,7 @@
     <div class="row">
       <div class="span4">
         <p>
-          <label for="id_observation_date">Observation Date:</label>
+          <label for="id_observation_date"><span class="required">*</span>Observation Date:</label>
           <div class="input-append date datetimepicker">
             <input data-format="dd/MM/yyyy hh:mm:ss"
                    type="text"
@@ -23,11 +23,10 @@
           </div>
         </p>
         <p>
-          <label for="id_updated">Latest Observation:</label>
+          <label for="id_updated"><span class="required">*</span>Latest Observation:</label>
           <div class="input-append date datetimepicker">
             <input data-format="dd/MM/yyyy hh:mm:ss"
-                   type="text"
-                   id="id_updated"
+                   type="text"                 id="id_updated"
                    name="updated">
             <span class="add-on">
               <i data-time-icon="icon-time" data-date-icon="icon-calendar">
@@ -36,25 +35,25 @@
           </div>
         </p>
         <p>
-          <label for="id_num_obs">Number of Observations:</label>
+          <label for="id_num_obs"><span class="required">*</span>Number of Observations:</label>
           <input id="id_num_obs" name="num_obs" type="text" value="" />
         </p>
       </div>
       <div class="span4">
         <p>
-          <label for="id_position_ra">R.A.</label>
+          <label for="id_position_ra"><span class="required">*</span>R.A.</label>
           <input id="id_position_ra" maxlength="100" name="position_ra" type="text" value="" />
         </p>
         <p>
-          <label for="id_position_dec">Declination:</label>
+          <label for="id_position_dec"><span class="required">*</span>Declination:</label>
           <input id="id_position_dec" maxlength="100" name="position_dec" type="text" value="" />
         </p>
         <p>
-          <label for="id_magnitude">Magnitude:</label>
+          <label for="id_magnitude"><span class="required">*</span>Magnitude:</label>
           <input id="id_magnitude" maxlength="100" name="magnitude" type="text" value="" />
         </p>
         <p>
-          <label for="id_arc">Arc:</label>
+          <label for="id_arc"><span class="required">*</span>Arc:</label>
           <input id="id_arc" name="arc" type="text" value="" />
         </p>
         <p>
@@ -62,7 +61,7 @@
           <input id="id_nominal_h" name="nominal_h" type="text" value="" />
         </p>
         <p>
-          <label for="id_score">
+          <label for="id_score"><span class="required">*</span>
             Score (%) from <a href="http://www.minorplanetcenter.net/iau/NEO/PossNEO.html"
                               target="_blank">MPC</a>:
          </label>

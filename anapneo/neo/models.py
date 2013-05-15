@@ -33,11 +33,11 @@ class Neo(models.Model):
     magnitude = models.CharField(max_length=100, verbose_name="Magnitude")
     created = models.DateTimeField(max_length=100, default=datetime.now)
     updated =  models.DateTimeField(max_length=100, verbose_name="Latest Observation")
-    note = models.TextField(max_length=300, verbose_name="Notes", blank=True)
+    note = models.TextField(max_length=300, verbose_name="Notes", blank=True)#not required
     num_obs = models.PositiveIntegerField(verbose_name="Number of Observations")
     arc = models.FloatField(verbose_name="Arc", validators=[MinValueValidator(0.0)])
-    nominal_h = models.FloatField(verbose_name="Nominal H", blank=True, validators=[MinValueValidator(0.0)])
-    image = models.ImageField(upload_to='.', verbose_name="Image", blank=True)
+    nominal_h = models.FloatField(verbose_name="Nominal H", blank=True, validators=[MinValueValidator(0.0)])#not required
+    image = models.ImageField(upload_to='.', verbose_name="Image", blank=True)#not required
 
 
 class Feedback(models.Model):
